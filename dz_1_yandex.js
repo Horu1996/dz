@@ -55,6 +55,7 @@ if (btnK != undefined){
     let nextGooglePage = true;
     for(let i=0; i<links.length; i++){
         if(links[i].href.indexOf(site) != -1){
+            links[i].removeAttribute('target');
             let link = links[i];
             nextGooglePage = false;
             setTimeout(()=>{link.click();},getRandom(1000,4000));
