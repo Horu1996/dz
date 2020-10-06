@@ -29,7 +29,6 @@ class Person{
 	    Дедушку по папе зовут: ".$this->father->father->name;
 	}
 }
-/* Тут создать 2 бубшки и 2 дедушки  */
 $boris = new Person("Борис","Петров",81);
 $masha = new Person("Маша","Петрова",81);
 
